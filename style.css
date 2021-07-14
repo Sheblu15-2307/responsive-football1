@@ -6,7 +6,7 @@
     margin-bottom: 150px;
     padding-top: 30px;
 }
-.flexible-container h1{
+h1{
     font-size: 40px;
     font-weight: 700px;
     color: white;
@@ -102,3 +102,161 @@ footer{
     margin-left: 510px;
 
 }
+/* ------------end footer style-------------------  */
+
+
+
+
+/* ===============================
+ Responsive With Media Query 
+================================== */
+
+    /* /// Mobile Devices /// */
+    @media only screen and (max-width: 688px) 
+    {
+        section
+        {
+            width:  100%;
+        }
+            /* /// Header Section ///  */
+    
+        .half-width{
+            flex-direction: column;
+            row-gap: 70px;
+            padding: 10px 50px;
+        }
+    
+        .half-width .imgBox img{
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+    
+        /* ////// Players ///// */
+        .container
+        {
+            padding: 70px 0 165px 0;
+        }
+    
+        .container .players
+        {
+            width: 95%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 27px;
+        }
+    
+        .players .player
+        {
+            background-color: #fff;
+            padding: 15px 15px 33px 15px;
+            text-align: center;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        }
+    
+        .player img
+        {
+            width: 100%;
+            height: auto;
+        }
+    
+        .player .player-name
+        {
+            text-align: left;
+        }
+    
+        .player .player-des
+        {
+            text-align: left;
+        }
+        .logo img{
+          
+        /* //Footer //  */
+    
+        footer
+        {
+            width: 80%;
+            margin: 50px auto 63px auto;
+            text-align: center;
+        }
+    
+    }
+    
+    /*///// Tablet Devices //// */
+    
+    @media (min-width: 688px) and (max-width: 992px) 
+    {
+        section
+        {
+            width: 100%;
+        }
+            /* /// Header Section ///  */
+    
+        .half-width
+        {
+            display: flex;
+            padding: 70px 50px;
+        }
+    
+        header .imgBox img
+        {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+    
+        /* ////// Players ///// */
+        .container
+        {
+            padding: 70px 0 165px 0;
+        }
+    
+        .container .players
+        {
+            width: 95%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 27px;
+        }
+    
+        .players .player
+        {
+            background-color: #fff;
+            padding: 15px 15px 33px 15px;
+            text-align: center;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        }
+    
+        .player img
+        {
+            width: 100%;
+            height: auto;
+        }
+    
+        .player .player-name
+        {
+            text-align: left;
+        }
+    
+        .player .player-des
+        {
+            text-align: left;
+        }
+
+        .logo img{
+            width: 60%;
+            padding right: 100px;
+           
+        }
+    
+        /* //Footer //  */
+    
+        footer 
+        {
+            width: 60%;
+            margin: 50px auto 63px auto;
+            text-align: center;
+        }
+    }
